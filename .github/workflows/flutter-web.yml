@@ -37,7 +37,7 @@ jobs:
       - name: Build web
         run: >
           flutter build web --release
-          --base-href "/${{ github.event.repository.name }}/"
+          --base-href "/"
           --dart-define=API_URL=${{ vars.API_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
